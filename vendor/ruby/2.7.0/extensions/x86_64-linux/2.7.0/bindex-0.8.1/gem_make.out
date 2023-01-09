@@ -1,0 +1,15 @@
+current directory: /home/vaishnavi/Desktop/RubyMineProject/Login_app/vendor/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+/home/vaishnavi/.rvm/rubies/ruby-2.7.0/bin/ruby -I /home/vaishnavi/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20230109-52532-5j8pqy.rb extconf.rb
+creating Makefile
+
+current directory: /home/vaishnavi/Desktop/RubyMineProject/Login_app/vendor/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /home/vaishnavi/Desktop/RubyMineProject/Login_app/vendor/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/vaishnavi/Desktop/RubyMineProject/Login_app/vendor/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20230109-52532-1vfiapy/skiptrace/internal

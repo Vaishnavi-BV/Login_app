@@ -1,35 +1,36 @@
-<div class="form">
+<div class="row">
 <%= form_with model: @user do |form| %>
-<p>
-	<%= form.label :user_Name ,class: 'label'%>
-	<%= form.text_field :name ,class: 'input' %>
-	<%= @user.errors.full_messages_for(:name).each do |message| %>
-	<p><%= message %></p>
+<div class="col">
+	<%= form.label :user_Name ,class: 'form-label'%>
+	<%= form.text_field :name ,class: 'form-control' %>
+	<% @user.errors.full_messages_for(:name).each do |message| %>
+	<div class="error"><%= message %></div>
 	<% end %>
-</p>
-<p>
-	<%= form.label :user_Age ,class: 'label'%>
-	<%= form.text_field :age ,class: 'input' %>
-	<%= @user.errors.full_messages_for(:age).each do |message| %>
-	<p><%= message %></p>
+</div>
+<div class="col">
+	<%= form.label :user_Age ,class: 'form-label'%>
+	<%= form.text_field :age ,class: 'form-control' %>
+	<% @user.errors.full_messages_for(:age).each do |message| %>
+	<div class="error"><%= message %></div>
 	<% end %>
-</p>
-<p>
-	<%= form.label :user_Address ,class: 'label'%>
-	<%= form.text_area :address ,class: 'input' %>
-	<%= @user.errors.full_messages_for(:address).each do |message| %>
-	<p><%= message %></p>
+</div>
+<div class="col">
+	<%= form.label :user_Address ,class: 'form-label'%>
+	<%= form.text_area :address ,class: 'form-control' %>
+	<% @user.errors.full_messages_for(:address).each do |message| %>
+	<div class="error"><%= message %></div>
 	<% end %>
-</p>
-<p>
-	<%= form.label :phone_no ,class: 'label'%>
-	<%= form.text_field :phone ,class: 'input'%>
-	<%= @user.errors.full_messages_for(:phone).each do |message| %>
-	<p><%= message %></p>
+</div>
+<div class="col">
+	<%= form.label :phone_no ,class: 'form-label'%>
+	<%= form.text_field :phone ,class: 'form-control'%>
+	<% @user.errors.full_messages_for(:phone).each do |message| %>
+	<div class="error"><%= message %></div>
 	<% end %>
-</p>
-<p>
-	<%= form.submit %>
-</p>
+</div>
+<div class="col">
+	<%= form.submit class:"btn btn-success" %>
+</div>
 <% end %>
 </div>
+

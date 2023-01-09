@@ -1,15 +1,20 @@
-<div class="container">
-	<ul>
+
+<div class="card card-items">
+	<h1 class="card-title">User Detail</h1>
+    <p style="color: green"><%= notice %></p>
+    <div clas="card-body">
+	<ol>
 		<li>User Name : <%= @user.name %> </li>
 		<li>User Age : <%= @user.age %> </li>
 		<li>Address : <%= @user.address %></li>
 		<li>Phone number : <%= @user.phone %> </li>
-	</ul>
-	<p><%= link_to 'edit',edit_home_path(@user) %>&nbsp;&nbsp;
+	</ol>
+	</div>
+	<p><%= link_to 'edit',edit_home_path(@user) ,class:"btn btn-warning"%>&nbsp;&nbsp;
 		<%= link_to 'delete', home_path(@user),data:{
 			turbo_method: :delete,
 			turbo_confirm: 'Are You Sure?'
-		}%>&nbsp;&nbsp;
-		<%= link_to 'back',root_path %>
+		},class:'btn btn-danger'%>&nbsp;&nbsp;
+		<%= link_to 'back',root_path ,class: 'btn btn-info' %>
 	</p>
 </div>

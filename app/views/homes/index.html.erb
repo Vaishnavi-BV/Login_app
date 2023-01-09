@@ -1,0 +1,32 @@
+<nav class="navbar">
+	<ul>
+		<li><h2>Customer Details</h2></li>
+		<li><%= link_to 'Add_user',new_home_path,class: 'link' %></li>
+	</ul>
+</nav>
+
+<div class="container">
+	<table class="table">
+		<tr>
+			<thead>
+				<th>Name</th>
+				<th>Age </th>
+				<th>Address</th>
+				<th>Phone_no</th>
+				<th colspan="3">Actions</th>
+			</thead>
+		</tr>
+		<% @users.each do |user| %>
+		<tr>
+			<td><%= user.name %></td>
+			<td><%= user.age %></td>
+			<td><%= user.address %></td>
+			<td><%= user.phone %></td>
+			<td><%= link_to 'show',home_path(user),class: 'link'%></td>
+			<td><%= link_to 'edit',edit_home_path(user),class: 'link' %></td>
+		</tr>
+		<% end %>
+	</table>
+</div>
+
+

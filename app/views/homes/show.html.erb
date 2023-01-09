@@ -1,0 +1,15 @@
+<div class="container">
+	<ul>
+		<li>User Name : <%= @user.name %> </li>
+		<li>User Age : <%= @user.age %> </li>
+		<li>Address : <%= @user.address %></li>
+		<li>Phone number : <%= @user.phone %> </li>
+	</ul>
+	<p><%= link_to 'edit',edit_home_path(@user) %>&nbsp;&nbsp;
+		<%= link_to 'delete', home_path(@user),data:{
+			turbo_method: :delete,
+			turbo_confirm: 'Are You Sure?'
+		}%>&nbsp;&nbsp;
+		<%= link_to 'back',root_path %>
+	</p>
+</div>

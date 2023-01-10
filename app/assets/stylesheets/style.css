@@ -2,8 +2,6 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100vh;
-  width: 100vw;
   background-color: lightgrey;
 }
 ul {
@@ -11,10 +9,14 @@ ul {
   margin: 0;
   padding: 0;
   background-color: #333;
-  width: 100vw;
 }
+
 .nav-link {
   color: white;
+  text-decoration: none;
+}
+.nav-link:hover{
+  color:whitesmoke;
   text-decoration: none;
 }
 .navbar li{
@@ -28,6 +30,7 @@ ul {
 
 .navbar li:hover {
   background-color: #111;
+  color:white;
 }
 .form-label{
   color:black;
@@ -55,10 +58,12 @@ ul {
 .row{
   font-size: 2rem;
   padding: 3em;
-  background-color: whitesmoke;
+  background-color: white;
+  border-radius: 20px;
 }
 .col{
   padding: 1.2em;
+  font-size: 2rem;
 }
 .btn{
   font-size: 2rem;
@@ -69,7 +74,7 @@ h1{
   text-align: center;
 }
 .btn-form{
-  float: right;
+  float: center;
 }
 table,th{
   text-align: center;
@@ -83,4 +88,21 @@ table,th{
 .card-body{
   font-size: 2rem;
   padding:1.4em;
+}
+.signin-form{
+  border-radius: 15px;
+  margin: 3em auto;
+  border: 2px solid lightgrey;
+  padding: 1.5rem;
+  width: 50%;
+}
+.col-form{
+  font-size: 2rem;
+  padding: 1.2rem;
+
+}
+#error_explanation{
+  color: red;
+  font-size: 2rem;
+  font-weight: 500;
 }

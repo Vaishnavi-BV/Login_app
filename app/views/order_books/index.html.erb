@@ -1,0 +1,21 @@
+<center><div class="card-items">
+	<table class="table table-striped">
+		<thead class="table-dark">
+			<th>User Id</th>
+			<th>School Name</th>
+			<th>Book Tittle</th>
+			<th>ISBN(last 6 digits)</th>
+			<th>Book Quantity</th>
+		</thead>
+		<% @books.each do |user| %>
+		<tr>
+			<td><%= user.userid %></td>
+			<td><%= user.schoolname %></td>
+			<td><%= user.booktitle %></td>
+			<td><%= user.isbn %></td>
+			<td><%= user.quantity%></td>
+		</tr>
+		<% end %>
+	</table>
+</div>
+</center>

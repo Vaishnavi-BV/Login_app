@@ -60,6 +60,8 @@ ul {
   padding: 3em;
   background-color: white;
   border-radius: 20px;
+  margin:0 auto;
+  width: 50%;
 }
 .col{
   padding: 1.2em;
@@ -115,4 +117,8 @@ table,th{
   text-decoration: none;
   font-size: 2rem ;
   font-weight: 500;
+}
+.span{
+  color:red;
+  font-size: 2rem;
 }

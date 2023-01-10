@@ -1,0 +1,42 @@
+<div class="row">
+<h1 class="card-title">School Book Order Form</h1> 
+<%= form_with model: @book do |form| %>
+<div class="col">
+	<%= form.label :user_Id,class:'form-label' %><span class="span">*</span>
+	<%= form.text_field :userid ,class:'form-control' %>
+	<% @book.errors.full_messages_for(:userid) do |message| %>
+	<div class="error"><%= message %></div>
+	<% end %>
+</div>
+<div class="col">
+	<%= form.label :school_Name,class:'form-label' %>
+	<%= form.text_field :schoolname ,class:'form-control' %>
+</div>
+<div class="col">
+	<%= form.label :book_Title,class:'form-label' %><span class="span">*</span>
+	<%= form.text_field :booktitle ,class:'form-control' %>
+	<% @book.errors.full_messages_for(:booktitle) do |message| %>
+	<div class="error"><%= message %></div>
+	<% end %>	
+</div>
+<div class="col">
+	<%= form.label :isbn,class:'form-label' %><span class="span">(last 6 digits) *</span>
+	<%= form.text_field :isbn ,class:'form-control' %>
+	<% @book.errors.full_messages_for(:isbn) do |message| %>
+	<div class="error"><%= message%></div>
+	<% end %>
+</div>
+<div class="col">
+	<%= form.label :book_Quantity,class:'form-label' %><span class="span">*</span>
+	<%= form.text_field :quantity ,class:'form-control' %>
+	<% @book.errors.full_messages_for(:quantity) do |message| %>
+	<div class="error"><%= message %></div>
+	<% end %>
+</div>
+<div class="col">
+	<%= form.submit class:'btn btn-success' %>&nbsp;&nbsp;
+	<%= link_to 'back',order_books_path ,class:'btn btn-info' %>
+</div>
+<% end %>
+
+</div>

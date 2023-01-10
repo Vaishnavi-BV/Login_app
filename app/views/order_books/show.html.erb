@@ -1,0 +1,18 @@
+<div class="card card-items">
+	<h1 class="card-title">Your Order</h1>
+	<div clas="card-body">
+	<p><%= image_tag 'book2.jpeg',width: 500,height:500  %></p>
+	<hr>
+	<p>School Name : <%= @book.schoolname %></p>
+	<p>Book Title : <%= @book.booktitle %></p>
+	<p>Book Quantity : <%= @book.quantity %></p>
+	<p>Book ISBN Number : <%= @book.isbn %></p>
+	<p><%= link_to 'back',order_books_path ,class:'btn btn-info'%>&nbsp;&nbsp;
+		<%= link_to 'cancel', order_book_path(@book),data:{
+			turbo_method: :delete,
+			turbo_confirm: 'Cancel the Order are you sure?'
+		},class:'btn btn-danger'%>
+	</p>
+	</div>
+
+</div>

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :homes
-  root to: "homes#index"
+  root to: "homes#main"
 
   # as :user do
   #   get "signin", to: "devise/sessions#new"

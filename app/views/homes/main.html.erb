@@ -1,0 +1,24 @@
+ 
+<center><div class="card-items">
+	<table class="table table-striped">
+			<thead class="table-dark" >
+				<th>Name</th>
+				<th>Age </th>
+				<th>Address</th>
+				<th>Phone_no</th>
+			</thead>
+		<tbody>
+		<% @users.each do |user| %>
+		<tr>
+			<td><%= user.name %></td>
+			<td><%= user.age %></td>
+			<td><%= user.address %></td>
+			<td><%= user.phone %></td>
+		</tr>
+		<% end %>
+	</tbody>
+	</table>
+</div>
+</center>
+
+

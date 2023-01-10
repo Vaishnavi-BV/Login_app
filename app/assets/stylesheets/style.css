@@ -106,3 +106,13 @@ table,th{
   font-size: 2rem;
   font-weight: 500;
 }
+.session-li{
+  float:right;
+  margin: 1.2em ;
+  margin-right: 2em;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2rem ;
+  font-weight: 500;
+}

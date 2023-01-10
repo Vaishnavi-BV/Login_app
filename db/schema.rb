@@ -27,7 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_10_102015) do
     t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "userid"
+    t.integer "home_id"
   end
 
   create_table "profiles", force: :cascade do |t|

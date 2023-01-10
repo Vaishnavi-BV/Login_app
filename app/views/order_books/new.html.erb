@@ -3,8 +3,8 @@
 <%= form_with model: @book do |form| %>
 <div class="col">
 	<%= form.label :user_Id,class:'form-label' %><span class="span">*</span>
-	<%= form.text_field :userid ,class:'form-control' %>
-	<% @book.errors.full_messages_for(:userid) do |message| %>
+	<%= form.text_field :home_id ,class:'form-control' %>
+	<% @book.errors.full_messages_for(:userid).each do |message| %>
 	<div class="error"><%= message %></div>
 	<% end %>
 </div>
@@ -15,21 +15,21 @@
 <div class="col">
 	<%= form.label :book_Title,class:'form-label' %><span class="span">*</span>
 	<%= form.text_field :booktitle ,class:'form-control' %>
-	<% @book.errors.full_messages_for(:booktitle) do |message| %>
+	<% @book.errors.full_messages_for(:booktitle).each do |message| %>
 	<div class="error"><%= message %></div>
 	<% end %>	
 </div>
 <div class="col">
-	<%= form.label :isbn,class:'form-label' %><span class="span">(last 6 digits) *</span>
+	<%= form.label :Isbn,class:'form-label' %><span class="span">(last 6 digits) *</span>
 	<%= form.text_field :isbn ,class:'form-control' %>
-	<% @book.errors.full_messages_for(:isbn) do |message| %>
+	<% @book.errors.full_messages_for(:isbn).each do |message| %>
 	<div class="error"><%= message%></div>
 	<% end %>
 </div>
 <div class="col">
 	<%= form.label :book_Quantity,class:'form-label' %><span class="span">*</span>
 	<%= form.text_field :quantity ,class:'form-control' %>
-	<% @book.errors.full_messages_for(:quantity) do |message| %>
+	<% @book.errors.full_messages_for(:quantity).each do |message| %>
 	<div class="error"><%= message %></div>
 	<% end %>
 </div>

@@ -13,11 +13,10 @@ class OrderBooksController < ApplicationController
 
   def create
     @book = OrderBook.new(book_params)
-    if @book.save
+    if @book.save!
       flash[:notice] = "You Orderd the Book Successfully!"
       redirect_to @book
     else
-      flash[:alert] = "Error Check the Form"
       render :new, status: :unprocessable_entity
     end
   end
@@ -31,7 +30,7 @@ class OrderBooksController < ApplicationController
   private 
 
   def book_params
-    params.require(:order_book).permit(:schoolname, :quantity , :isbn ,:booktitle )
+    params.require(:order_book).permit(:home_id,:schoolname, :quantity , :isbn ,:booktitle )
   end
 
 

@@ -1,0 +1,13 @@
+<div class="card card-items">
+	<div class="card-body">
+		<h1 class="card-title">PROFILE</h1>
+		<div class="col">
+			<%= @profile.firstname %><br>
+			<%= @profile.phone %>
+			<%= @profile.mail_id %>
+		</div>
+		<div class="col">
+			<%= link_to 'EDIT PROFILE',edit_profile_path(@profile),class:'btn btn-info' %>
+		</div>
+	</div>
+</div>

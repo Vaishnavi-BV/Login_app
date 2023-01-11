@@ -122,3 +122,6 @@ table,th{
   color:red;
   font-size: 2rem;
 }
+.card-body{
+  text-align: center;
+}

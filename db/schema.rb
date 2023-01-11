@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_10_102015) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_11_044503) do
   create_table "homes", force: :cascade do |t|
     t.string "name"
     t.integer "age"
@@ -31,10 +31,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_10_102015) do
   end
 
   create_table "profiles", force: :cascade do |t|
-    t.string "name"
+    t.string "firstname"
+    t.string "lastname"
     t.string "phone"
-    t.string "email"
-    t.text "bio"
+    t.string "mail_id"
+    t.string "gender"
+    t.string "occupation"
+    t.string "pincode"
+    t.string "city"
+    t.string "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

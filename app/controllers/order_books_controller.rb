@@ -13,7 +13,7 @@ class OrderBooksController < ApplicationController
 
   def create
     @book = OrderBook.new(book_params)
-    if @book.save!
+    if @book.save
       flash[:notice] = "You Orderd the Book Successfully!"
       redirect_to @book
     else

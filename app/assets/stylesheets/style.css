@@ -14,28 +14,25 @@ ul {
 .nav-link {
   color: white;
   text-decoration: none;
+  font-size: 2.5rem ;
+  margin-left: 1em;
+  padding-left: 2em;
 }
 .nav-link:hover{
-  color:whitesmoke;
+  color: #f0e090;
   text-decoration: none;
 }
 .navbar li{
   display: inline-block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-  font-size: 2rem ;
 }
 
-.navbar li:hover {
-  background-color: #111;
-  color:white;
-}
 .form-label{
   color:black;
   font-weight: bold;
-  fonr-size: 2rem;
+  font-size: 2rem;
 }
 .form-control{
   font-size: 2rem;
@@ -110,13 +107,28 @@ table,th{
 }
 .session-li{
   float:right;
-  margin: 1.2em ;
-  margin-right: 2em;
+  margin: 2.5em 2em;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 2rem ;
+  padding: 10px;
+  font-size: 2rem;
   font-weight: 500;
+  border:2px solid blue;
+  border-radius: 15px;
+}
+.session-li:hover{
+  background-color: blue;
+}
+.session{
+  color: white;
+  text-decoration: none;
+}
+.session:hover{
+  text-decoration: none;
+  color: white;
+}
+.user-account{
+  float:right;
+  margin-top: 3.2em ;
 }
 .span{
   color:red;
@@ -124,4 +136,51 @@ table,th{
 }
 .card-body{
   text-align: center;
+}
+.logo{
+  border-radius: 50%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.font_logo{
+  color: #db0218;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  text-align: center;
+}
+.title{
+  background-color: #3d3b3b;
+  font-size: 2.5rem;
+}
+.main{
+  background-image: url(book3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-title{
+  color:#3a02f0;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-family: serif;
+  margin-left: 1em;
+  line-height: 1.5;
+}
+.main-div{
+  margin-top: 3.5em;
+  float: left;
+  padding: 2rem;
+}
+.main-content{
+  margin-left: 3em;
+  line-height: 1.5;
+  font-size:  2em;
+  color:rgba(0, 0, 0, 0.6);
+}
+.main-btn{
+  margin: 3em 5em;
+  padding: 2rem;
+
 }

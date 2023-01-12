@@ -5,10 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one :profile, dependent: :destroy
-  after_create :init_profile
-
-  def init_profile
-    self.create_profile!
-  end
+  
   
 end

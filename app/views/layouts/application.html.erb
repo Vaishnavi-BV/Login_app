@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -30,7 +30,7 @@
       <li><%= link_to 'NEW',new_home_path ,class:'nav-link' %></li>
       <li><%= link_to 'ORDERS',order_books_path,class:'nav-link' %></li>
       <li><%= link_to 'ORDER BOOK',new_order_book_path,class:'nav-link' %></li>
-      <li class="user-account"><%= image_tag 'user_logo.png',width:50,height:50,class:'logo'%><%= link_to 'x',new_profile_path,class:'' %></li>
+      <li class="user-account"><%= image_tag 'user_logo.png',width:50,height:50,class:'logo'%><%= link_to '',new_profile_path,class:'' %></li>
     <% else %>
       <li class="session-li "><%= link_to "SIGNIN", new_user_session_path ,class:'session'%> </li>
       <li class="session-li "><%= link_to 'SIGNUP' ,new_user_registration_path ,class:'session'%></li>

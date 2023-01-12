@@ -112,11 +112,11 @@ table,th{
   padding: 10px;
   font-size: 2rem;
   font-weight: 500;
-  border:2px solid blue;
+  border:2px solid red;
   border-radius: 15px;
 }
 .session-li:hover{
-  background-color: blue;
+  background-color: red;
 }
 .session{
   color: white;
@@ -161,7 +161,7 @@ table,th{
   background-size: cover;
 }
 .main-title{
-  color:#3a02f0;
+  color: red;
   font-size: 3.5em;
   font-weight: bold;
   font-family: serif;

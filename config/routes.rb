@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   devise_for :users
   root "main_pages#index"
   resources :profiles
-  
+
+  get "fiction", to: "homes#cards"
+  get "non-fiction",to: "homes#non_fiction"
   resources :homes 
   resources :order_books
   

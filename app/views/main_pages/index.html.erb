@@ -1,7 +1,26 @@
-<body class="main">
-	<div class="main-div">
-	<h1 class="main-title"> WELCOME TO OUR BOOK SHOPY! </h1>
-	<p class="main-content">Login our page you get more details.Keep Visiting our page!</p>
-	<%= button_to 'Get Started' ,root_path ,class: 'btn btn-primary main-btn' %>
+<div class="main">
+	<div class="main-content">
+		<h2 style="padding-bottom:2rem;">2023 Special Offer!</h2>
+		<h3 style="color:red;font-size: 4rem;padding-bottom:2rem ;">Get 50% Off for All Types of Books</h3>
+		<p style="padding-bottom:2rem;">All readers have different tastes, so deciding which book genre is most popular can be tricky. Here you can find all kinds of books. Surely you will love our bookstore.</p>
+		<p><%= link_to 'Shop Now' ,fiction_path,class: 'btn btn-danger'%></p>
+	</div>
 </div>
-</body>
+
+<div class="main2">
+	<div class="container1"><center>
+		<div class="content">
+		<h2>FICTION</h2>
+		<p>Here have fantasic Fiction Books.For example,Horror,Mystry,Plays, Historical fiction, Women's fiction,etc. 
+		<p><%= link_to 'View All ',fiction_path,class:'btn btn-danger'%></p>
+		</div></center>
+	</div>
+	<div class="container2"><center>
+		<div class="content">
+		<h2>NON-FICTION</h2>
+		<p>Here have Non-Fiction Books.For Example,Biography, Essays,Non-fiction novel,Self-help and Autobiography and memoir.
+		<p><%= link_to 'View All ',non_fiction_path,class:'btn btn-danger' %></p>
+		</div></center>
+	</div>
+</div>
+

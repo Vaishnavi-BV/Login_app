@@ -5,6 +5,9 @@ class HomesController < ApplicationController
 
   def non_fiction
   end
+
+  def collections
+  end
   
   def main
     @users = Home.all

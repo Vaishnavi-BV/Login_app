@@ -1,29 +1,25 @@
-<div class="row">
+<div class="cards">
 <%= form_with model: @user do |form| %>
 <div class="col">
-	<%= form.label :user_Name ,class: 'form-label'%>
-	<%= form.text_field :name ,class: 'form-control' %>
+	<%= form.text_field :name ,placeholder:'Name',class: 'form-control' %>
 	<% @user.errors.full_messages_for(:name).each do |message| %>
 	<div class="error"><%= message %></div>
 	<% end %>
 </div>
 <div class="col">
-	<%= form.label :user_Age ,class: 'form-label'%>
-	<%= form.text_field :age ,class: 'form-control' %>
+	<%= form.text_field :age ,placeholder: 'Age',class: 'form-control' %>
 	<% @user.errors.full_messages_for(:age).each do |message| %>
 	<div class="error"><%= message %></div>
 	<% end %>
 </div>
 <div class="col">
-	<%= form.label :user_Address ,class: 'form-label'%>
-	<%= form.text_area :address ,class: 'form-control' %>
+	<%= form.text_area :address ,placeholder:'Address',class: 'form-control' %>
 	<% @user.errors.full_messages_for(:address).each do |message| %>
 	<div class="error"><%= message %></div>
 	<% end %>
 </div>
 <div class="col">
-	<%= form.label :phone_no ,class: 'form-label'%>
-	<%= form.text_field :phone ,class: 'form-control'%>
+	<%= form.text_field :phone ,placeholder:'Phone Number',class: 'form-control'%>
 	<% @user.errors.full_messages_for(:phone).each do |message| %>
 	<div class="error"><%= message %></div>
 	<% end %>

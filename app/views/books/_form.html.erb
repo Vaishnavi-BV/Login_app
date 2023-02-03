@@ -16,26 +16,25 @@
               <%= form.text_field :title ,class:'form-control',placeholder: 'Book Title'%>
             </div>
 
-            <div class="col col-md-6 ">
-              <%= form.text_field :price,placeholder: 'Price',class: 'form-control' %>
-            </div>
-
-             <div class="col ">
+             <div class="col col-md-6 ">
               <%= form.text_field :author,placeholder: 'Author' ,class:'form-control' %>
             </div>
 
-          
-            <div class="col ">
+             <div class="col col-md-12 ">
+              <%= form.text_area :content,placeholder: 'Write About Book ...',class: 'form-control' %>
+            </div>
+           
+             <div class="col col-md-6 ">
+              <%= form.text_field :price,placeholder: 'Price',class: 'form-control' %>
+            </div>
+           
+            <div class="col col-md-6 ">
               <%= image_tag form.object.image_url if form.object.cached_image_data%>
               <%= form.hidden_field :image, value: form.object.cached_image_data %>
               <%= form.file_field :image, label: 'Choose Book Image' ,class: '' %>
             </div>
 
-            <div class="col ">
-              <%= form.select :type, ['Fiction','Non-fiction'] ,class:'' %>
-            </div>
-
-            <div class="col ">
+            <div class="col col-md-12 ">
               <%= form.submit class:'btn btn-danger' %>
             </div>
           </div>

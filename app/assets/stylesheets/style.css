@@ -93,6 +93,7 @@ ul {
   float: right;
 }
 .form-control{
+  color: white;
   font-size: 1.5rem;
   padding: 1em;
   background-color: transparent;
@@ -105,9 +106,7 @@ ul {
   font-size: 1.5rem;
   padding: 1.2rem;
 }
-.form-label{
 
-}
 
 
 /* Profile Created */
@@ -296,7 +295,7 @@ table,th{
 
 /* Books Collections */
 .Head{
-  background: linear-gradient(rgba(0, 0, 0,0.3),rgba(255, 255, 255, 0.5)),url(book-bg2.jpg);
+  background: linear-gradient(rgba(0, 0, 0,0.3),rgba(255, 255, 255,0.2)),url(book-bg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -306,7 +305,7 @@ table,th{
 }
 .grid-container {
   display: grid;
-  justify-content: space-evenly;
+  gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
   margin: 2em;
@@ -343,32 +342,35 @@ table,th{
 }
 .show-container{
   display: flex;
+  color: white;
   height: 100vh;
-  width: 80%;
-  padding: 2rem;
+  padding: 3rem;
   margin: 2rem;
 }
 .contents{
   background-color: #333;
   padding: 1.8em;
+  height: 80vh;
+  width: 60%;
 }
 .show-img{
-  height: 100vh;
-  width: 30vw;
+  height: 80vh;
+  width: 40vw;
 }
 .h3{
-  padding: 0px 2em ;
+  font-size: 4rem;
 }
 .hr{
-  background-color: #f0e090;
-  height: 2px;
-  width:25%;
-  border-radius: 12px;
-  padding: 0px 2rem;
-}
+  border: none;
+  background: rgba(252, 28, 3,0.8);
+  height: 8px;
+  width: 25%;
+  border-radius: 12px; 
+  margin: 2em 0px;
+  }
 .price{
   color: red;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 /* Create a Responsive Pages */

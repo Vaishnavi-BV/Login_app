@@ -4,22 +4,20 @@
     <h4><%= link_to 'Home',root_path %> - <%= link_to 'All',books_path %> </h4>
     </center>
 </div>
-
+ <div class='grid-container'>
   <% @books.each do |book| %>
-    <div class='grid-container'>
+   
+      <div id="<%= dom_id book %>" class="card">
+            <div>
+              <%= image_tag book.image_url ,class:'cart-img' %>
+              <p><b><%= book.author %></b></p>
+              <h4 class="h4"><b><%= book.title %></b></h4> 
+              <p><b>Price: &#8377;&nbsp;<%= book.price %></b></p>   
+              <p><%= link_to "Show this book", book %></p>
+            </div>
+      </div> 
 
-      <div id="<%= dom_id book %>">
-
-          <div class="card">
-            <%= image_tag book.image_url ,class:'cart-img' %>
-            <p><b><%= book.author %></b></p>
-            <h4 class="h4"><b>WOMEN'S FICTION</b></h4> 
-            <p><b>Price: &#8377;&nbsp;<%= book.price %></b></p> 
-            <p><b>Type : </b><%= book.type %></p>
-            <p><%= link_to "Show this book", book %></p>
-          </div>
-
-      </div>    
   <% end %>
+</div>
 
 

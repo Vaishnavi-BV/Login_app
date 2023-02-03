@@ -1,15 +1,12 @@
 Rails.application.routes.draw do
+  resources :books
 
   devise_for :users
   root "main_pages#index"
   resources :profiles
-
-  get "fiction", to: "homes#cards"
-  get "non-fiction", to: "homes#non_fiction"
-  get "collections", to: "homes#collections"
   resources :homes 
   resources :order_books
-  resources :add_books
+ 
   
   # as :user do
   #   get "signin", to: "devise/sessions#new"

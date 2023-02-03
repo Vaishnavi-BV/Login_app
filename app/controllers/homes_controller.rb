@@ -1,13 +1,4 @@
 class HomesController < ApplicationController
-
-  def cards
-  end
-
-  def non_fiction
-  end
-
-  def collections
-  end
   
   def main
     @users = Home.all

@@ -5,17 +5,20 @@ body{
   box-sizing: border-box;
   background-color: lightgrey;
   font-family: 'Lora', serif; 
+  min-height: 100vh;
 }
+
 
 /* Style the Navbars */
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
+  margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 .navbar{
-  margin-bottom: -10px;
+  background-color: #333;
+  margin-bottom: 0px;
 }
 .nav-link {
   color: white;
@@ -69,6 +72,7 @@ ul {
   border-radius: 50%;
 }
 
+
 /* Login , logout Form Designs */
 .session-form{
   background: url(login-bg.jpg);
@@ -91,13 +95,19 @@ ul {
 .form-control{
   font-size: 1.5rem;
   padding: 1em;
-  background-color: whitesmoke;
+  background-color: transparent;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgba(255, 255, 255, 0.5);
 }
+
 .col-form{
   font-size: 1.5rem;
   padding: 1.2rem;
 }
+.form-label{
 
+}
 
 
 /* Profile Created */
@@ -106,9 +116,45 @@ ul {
 }
 
 /* Show that the Order Books Page Designs and Design the existing forms*/
-.cards{
-  margin: 2rem auto;
+.form-design{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('form-bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
+  width: 100%;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.form-design h2{
+  color: rgb(201, 77, 77);
+  z-index: 1;
+}
+.form-select{
+  background-color: white ;
+  font-size: 1.8rem;
+  padding: 2rem;
+}
+.form{
+  margin: 2rem;
+  padding: 2em;
+  background-color: rgba(0,0,0,0.5);
+  border: 2px solid outset;
+  width:60%;
+  height: auto;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.col{
+  width: auto;
+  font-size: 1.8rem;
+  padding: 2rem;
+  margin: 2rem;
+  background: transparent;
 }
 .card-items{
   font-size: 2rem;
@@ -125,10 +171,6 @@ ul {
   color: red;
   font-size: 2rem;
 }
-.col{
-  padding: 1rem;
-  font-size: 2rem;
-}
 .btn{
   font-size: 1.5rem;
   border-radius: 5px;
@@ -141,6 +183,7 @@ h1{
   float: center;
 }
 
+
 /* Design the Index pages created a Table */
 table,th{
   text-align: center;
@@ -151,7 +194,6 @@ table,th{
   background-color: black;
   color: white;
 }
-
 .span{
   color:red;
   font-size: 2rem;
@@ -238,6 +280,7 @@ table,th{
   text-align: center;
 }
 
+
 /* Alert Message */
 .alert{
   background-color: #333;
@@ -247,7 +290,9 @@ table,th{
   text-align: center;
   width: 100%;
   margin: 0px;
+  margin-bottom: 1px;
 }
+
 
 /* Books Collections */
 .Head{
@@ -262,8 +307,7 @@ table,th{
 .grid-container {
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: 33% 33% 33%;
-  gap: 2.5rem;
+  grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
   margin: 2em;
 }
@@ -297,6 +341,37 @@ table,th{
   font-size: 1.3rem;
   margin-bottom: 2em;
 }
+.show-container{
+  display: flex;
+  height: 100vh;
+  width: 80%;
+  padding: 2rem;
+  margin: 2rem;
+}
+.contents{
+  background-color: #333;
+  padding: 1.8em;
+}
+.show-img{
+  height: 100vh;
+  width: 30vw;
+}
+.h3{
+  padding: 0px 2em ;
+}
+.hr{
+  background-color: #f0e090;
+  height: 2px;
+  width:25%;
+  border-radius: 12px;
+  padding: 0px 2rem;
+}
+.price{
+  color: red;
+  font-size: 1.5rem;
+}
+
+/* Create a Responsive Pages */
 @media screen and (max-width: 1000px){
   .cart-img{
     width:100%;
@@ -323,6 +398,7 @@ table,th{
 
 /*Footer of the book shopy */
 .footer{
+  position: relative;
   background-color: #333;
   color: white; 
   padding-top: 2.5em; 

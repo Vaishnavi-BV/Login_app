@@ -1,0 +1,36 @@
+<div class="Head">
+    <center>
+    <h1>Collection</h1>
+    <h4>  </h4>
+    </center>
+</div>
+ 
+    <% @categories.each do |category| %>
+      <div id="<%= dom_id category %>" class="card">
+        <div class='grid-container'>
+        <% category.books.each do |book| %>
+            <div>
+              <%= image_tag book.image_url ,class:'cart-img' %>
+              <p><b><%= book.author %></b></p>
+              <h4 class="h4"><b><%= book.title %></b></h4> 
+              <p><b>Price: &#8377;&nbsp;<%= book.price %></b></p>   
+              <p><%= link_to "Show this category", category %></p>
+            </div>
+        <% end  %>
+          </div> 
+      </div> 
+  
+     <% end %>
+
+      
+
+
+
+
+
+
+
+
+
+
+

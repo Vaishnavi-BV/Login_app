@@ -1,0 +1,30 @@
+<div class="Head">
+    <center>
+    <h1>collections</h1>
+    <h4> <%= @category.name %> - <%= @book.title %></h4>
+    </center>
+</div>
+
+    <div id="<%= dom_id @category %>" class="show-container">
+       <% @category.books.each do |book| %> 
+        <div>
+            <%= image_tag book.image_url ,class:'show-img' %>
+        </div>
+        <div class="contents">
+            <h3 class="h3"><b><%= book.title %></b></h3> 
+            <hr class="hr">
+            <p><%= book.content %></p>
+            <p class="price"><b>Price: &#8377;&nbsp;<%= @book.price %></b></p>
+            <p><%= link_to book.@category.name, book.@category %></p>
+            <p><%= link_to "Add cart", books_path,class:'btn btn-danger'%></p>
+            <% if user_signed_in? %>
+            <p>
+              <%= link_to "Edit this book", edit_book_path(book),class: 'btn btn-danger' %> 
+              <%= button_to "Destroy this book", book, data: { turbo_method: :delete,turbo_confirm: 'Are You Sure?'},class:'btn btn-danger' %>
+            </p>
+            <% end %>
+            
+        </div>
+        <% end %>
+       
+    </div>  

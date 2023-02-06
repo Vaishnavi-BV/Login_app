@@ -1,5 +1,5 @@
 
-<nav class="navbar">
+<nav class="navbar" >
   <ul>
     <li class="title"><h2><%= image_tag 'book_logo.jpeg',width:50,height:50 ,class:'logo'%> <%=link_to 'Book Shopy', root_path ,class:"font_logo"%></h2></li>
     <% if user_signed_in? %> 
@@ -8,6 +8,12 @@
         <li class="session-li"><%= link_to 'BOOKS',books_path,class: 'session' %></li>
 
         <li class="session-li"><%= link_to 'ADD BOOK',new_book_path,class: 'session' %></li>
+        <li class="session-li">
+          <%= link_to 'CATEGORY',new_category_path, class: 'session' %>
+          
+
+        </li>
+
        
         <li class="session-li"><%= link_to 'ACCOUNT',new_profile_path,class:'session' %></li>
     <% else %>

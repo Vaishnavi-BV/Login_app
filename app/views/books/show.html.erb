@@ -1,7 +1,7 @@
 <div class="Head">
     <center>
     <h1>collections</h1>
-    <h4>Fiction - <%= @book.title %></h4>
+    <h4> <%= @book.category.name %> - <%= @book.title %></h4>
     </center>
 </div>
 
@@ -15,6 +15,7 @@
             <hr class="hr">
             <p><%= @book.content %></p>
             <p class="price"><b>Price: &#8377;&nbsp;<%= @book.price %></b></p>
+            <p><%= link_to @book.category.name, @book.category %></p>
             <p><%= link_to "Add cart", books_path,class:'btn btn-danger'%></p>
             <% if user_signed_in? %>
             <p>

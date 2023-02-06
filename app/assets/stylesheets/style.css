@@ -93,18 +93,15 @@ ul {
   float: right;
 }
 .form-control{
-  color: white;
+  color: black;
   font-size: 1.5rem;
   padding: 1em;
-  background-color: transparent;
-  outline: 0;
-  border-width: 0 0 2px;
-  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .col-form{
   font-size: 1.5rem;
   padding: 1.2rem;
+  color: black;
 }
 
 
@@ -115,11 +112,20 @@ ul {
 }
 
 /* Show that the Order Books Page Designs and Design the existing forms*/
+.input{
+  color: white;
+  font-size: 1.5rem;
+  padding: 1em;
+  background-color: transparent;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgba(255, 255, 255, 0.5);
+}
 .form-design{
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('form-bg.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: auto;
   width: 100%;
   margin-top: -20px;
   display: flex;
@@ -142,13 +148,13 @@ ul {
   padding: 2em;
   background-color: rgba(0,0,0,0.5);
   border: 2px solid outset;
-  width:60%;
-  height: auto;
+  width: 60%;
+  height: initial;
   color: black;
   font-size: 1.5rem;
 }
 
-.col{
+.form .col{
   width: auto;
   font-size: 1.8rem;
   padding: 2rem;
@@ -404,7 +410,7 @@ table,th{
   background-color: #333;
   color: white; 
   padding-top: 2.5em; 
-  height: 80vh;
+ 
 }
 .section1{
   display: flex;

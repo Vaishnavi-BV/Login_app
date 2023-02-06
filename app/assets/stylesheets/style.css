@@ -305,7 +305,7 @@ table,th{
 }
 .grid-container {
   display: grid;
-  gap: 2rem;
+  gap: 2em;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
   margin: 2em;
@@ -314,7 +314,7 @@ table,th{
   text-align: center;
   background-color: rgba(0, 0, 0,0.1);
   border-radius: 15px;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 .card{
   font-size: 1.2rem;
@@ -328,7 +328,7 @@ table,th{
 }
 .cart-img{
   width: 100%;
-  height: 70%;
+  height: 50vh;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   padding-bottom: 1em;

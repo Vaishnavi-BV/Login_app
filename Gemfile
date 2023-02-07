@@ -31,6 +31,9 @@ gem "jbuilder"
 gem 'shrine', '~> 3.3'
 gem 'image_processing', '~> 1.12', '>= 1.12.1'
 
+#Set The Icons Using this gem
+gem "font-awesome-sass", "~> 6.2.1"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

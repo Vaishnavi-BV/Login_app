@@ -13,4 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ @import "font-awesome"
+# Nothing additional needed to install for free icons.
+# Brands, free solid, and free regular icons are included with the import above.
 
